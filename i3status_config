@@ -1,0 +1,62 @@
+# ~/.config/i3status/config
+
+general
+{
+    output_format = "i3bar"
+    interval = 1
+
+    colors = true
+    color_good = "#00FF00"
+    color_degraded = "#FFFF00"
+    color_bad = "#FF0000"
+}
+
+order += "wireless _first_"
+order += "battery all"
+order += "disk /"
+order += "memory"
+order += "cpu_usage"
+order += "cpu_temperature 0"
+order += "tztime local"
+
+wireless _first_
+{
+    format_up = "%quality %frequency"
+    format_down = "W: down"
+}
+
+battery all
+{
+    format = "%status %percentage"
+    last_full_capacity = true
+    format_down = "No battery"
+    path = "/sys/class/power_supply/BAT%d/uevent"
+    low_threshold = 10
+}
+
+disk "/"
+{
+    format = "%avail DISK"
+    low_threshold = "10"
+    threshold_type = "gbytes_avail"
+    format_below_threshold = "Warning: %avail"
+}
+
+memory
+{
+    format = "%used MEM"
+    threshold_degraded = "1G"
+    threshold_critical = "200M"
+    format_degraded = "MEM < %available"
+}
+
+cpu_usage
+{
+    format = "%usage CPU USAGE"
+}
+
+tztime local
+{
+    format = "%d.%m.%Y %H:%M:%S"
+}
+

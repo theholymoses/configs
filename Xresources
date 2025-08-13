@@ -1,0 +1,12 @@
+*.vt100.locale: false
+*.vt100.utf-8: true
+
+*.vt100.foreground: white
+*.vt100.background: black
+
+*.vt100.renderFont: true
+*.vt100.faceName: PxPlus IBM VGA 8x14
+*.vt100.faceSize: 26
+
+Sxiv.background: black
+Sxiv.foreground: white
