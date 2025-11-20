@@ -1,8 +1,13 @@
 set nocompatible
 set fileencodings=utf-8
 
-set dir=$HOME/.vim/swapfiles//
-set vdir=$HOME/.vim/views//
+set vdir=$HOME/.vim/views
+set tags=$HOME/.vim/tags
+set notagrelative
+cs add $HOME/cscope.out
+
+set nobackup
+set noswapfile
 
 set wildmenu
 set number
@@ -19,7 +24,7 @@ set matchpairs+=<:>
 set cursorline
 
 syntax off
-colorscheme dark
+colorscheme cmbw
 set hlsearch
 
 set nowrap
