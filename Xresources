@@ -5,9 +5,9 @@
 *.vt100.background: black
 
 *.vt100.renderFont: true
-*.vt100.faceName: PxPlus IBM VGA 8x14
+*.vt100.faceName: PxPlus IBM XGA-AI 12x20
 *.vt100.faceSize: 26
 
 Sxiv.background: black
 Sxiv.foreground: white
-Sxiv.font: PxPlus IBM VGA 8x14-36
+Sxiv.font: PxPlus IBM XGA-AI 12x20
